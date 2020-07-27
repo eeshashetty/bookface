@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Bookface
+Learning how to create a Social Media Website using React + NodeJS
+
+Backend Code is at [Bookface-API](https://github.com/eeshashetty/bookface-api)
+
 ## Available Scripts
 
 In the project directory, you can run:
