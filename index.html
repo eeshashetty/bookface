@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>timer</title>
+</head>
+
+<body>
+    <button id="start" onclick="myTimer = setInterval(myCounter, 1000)">Start</button>
+
+    <div id="d1">
+
+        Driver 1:
+        <p id='time1'>
+        <p>    Lap 1:<p id="lp1">0</p></p>
+
+        </p>
+        <button id='lap1' onclick="newLap()">New Lap</button>
+        <button id='crash1'>Crash</button>
+    </div>
+    <div>
+        Driver 2: <p id='time2'>0</p>
+        <button id='lap2'>New Lap</button>
+        <button id='crash2'>Crash</button>
+    </div>
+    <div>
+        Driver 3: <p id='time3'>0</p>
+        <button id='lap3'>New Lap</button>
+        <button id='crash3'>Crash</button>
+    </div>
+</body>
+<script>
+    var a = 0
+    var ai = 0
+    var b = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    var c = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    var lap = [1, 1, 1]
+
+    function myCounter() {
+        document.getElementById("lp1").innerHTML = ++a;
+        document.getElementById("time2").innerHTML = ++b[0];
+        document.getElementById("time3").innerHTML = ++c[0];
+    }
+
+    function newLap() {
+        var node = document.createElement("p")
+        node.innerHTML = `Lap ${++ai}:`
+        var old = document.getElementById("lp1")
+        old.id = "lp"
+        var n = document.createElement("p")
+        n.id = "lp1"
+        a = 0
+        node.appendChild(n)
+        document.getElementById("time1").appendChild(node)
+       
+    }
+</script>
+
+</html>

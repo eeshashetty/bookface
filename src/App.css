@@ -1,38 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+body {
+  background-color: #08081F;
+  opacity: 89%;
+}
+
 .App {
+  margin-top: 295px;
+  
+}
+
+.test {
+  display: grid;
+  grid-template-columns: auto auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+	left: 0;
+	right: 0;
+  margin: auto;
+  width: 90%;
+  height: 80%;
+  max-width: 1800px;
+  max-height: 900px;
+  background-color: #FBFBFB;
+  border-radius: 69px;
+}
+
+div:not(.test){
+opacity: 80;
+}
+
+#sp {
+  width: 45%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 50px;
+  margin: auto 0px auto;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
+.box1 {
+  height: 400px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.box2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  border: none;
+  border-radius: 9px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #FFFFFF;
+  margin: 10px;
+  width: 53.1%;
+  padding: 20px;
+  max-width: 401px;
+  max-height: 75.4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button.signup {
+  background-color: #FA759E;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button.login {
+  background-color: #6DC9F7;
 }
 
-.App-link {
-  color: #61dafb;
+.img {
+  margin-top: auto;
+  margin-bottom: 35%;
+  margin-right: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: right;
+  width: 70%;
+  margin-left: 22%;
 }
+
+p.label {
+  font-size: 60px;
+  text-align: left;
+}
+
+p.title {
+  font-size: 86px; 
+  color:  #B1D7FE;
+  font-weight: 300;
+  line-height: 18pt;
+}
+
+
+p.body {
+  font-size: 38px; 
+  color:  #FFFFFF;
+  font-weight: 600;
+  /* margin-left: 17%; */
+}
+
+form {
+  display: block;
+  /* margin-left: 28%; */
+}(
+
+input.fn {
+  display: inline-block;
+  width: 10%;
+}
+
+input.ln {
+  display: inline-block;
+  width: 10%;
+}
+
+input {
+  border: none;
+  margin: 30px;
+  font-size: 20px;
+  display: block;
+  background-color: #FBFBFB;
+  border-radius: 9px;
+  height: 60%;
+  width: 60%;
+  padding: 24px;
+  Box-shadow:0 10px 20px rgba(0,0,0,0.3), 0 10px 10px rgba(0,0,0,0.20);
+}
+
+input:focus{
+  outline: none;
+}
+
